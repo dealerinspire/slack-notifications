@@ -1,0 +1,30 @@
+{
+    "name": "skybluesofa/slack-notifications",
+    "description": "This package provides a way to easily send Slack notifications with attachments.",
+    "keywords": ["slack", "notifications"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dave Rogers",
+            "email": "connect@skybluesofa.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skybluesofa\\SlackNotifications\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Skybluesofa\\SlackNotifications\\Tests\\": "tests/"
+        }
+    },   
+    "minimum-stability": "stable"
+}
