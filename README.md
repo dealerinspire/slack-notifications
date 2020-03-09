@@ -128,5 +128,14 @@ SLACK_ICON
 SLACK_CHANNEL
 ```
 
+When you use environmental variables this, a basic use case can become even simpler:
+
+```
+(new SlackNotification)
+    ->withTitle('Testing Slack Notification')
+    ->withText('Just checking to make sure the notification goes through')
+    ->send();
+```
+
 ## Contributing
 See the [CONTRIBUTING](CONTRIBUTING.md) guide.
