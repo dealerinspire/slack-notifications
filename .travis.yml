@@ -1,17 +1,17 @@
 language: php
 
 os: linux
-    
-env:
-  global:
-    - APP_ENV=testing DB_CONNECTION=mysql DB_DATABASE=travis_db DB_USERNAME=travis DB_PASSWORD= CACHE_DRIVER=array SESSION_DRIVER=array QUEUE_DRIVER=sync
-    - CC_TEST_REPORTER_ID=54ec5b2043e1879fa0c7ca5625923300bd2eebffc679b2e106ff286968bdad2e
-    - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)    
+
+services:
+  - mysql
 
 php:
   - 7.2
   - 7.3
   - 7.4
+
+env:
+    - APP_ENV=testing DB_CONNECTION=mysql DB_DATABASE=travis_db DB_USERNAME=travis DB_PASSWORD= CACHE_DRIVER=array SESSION_DRIVER=array QUEUE_DRIVER=sync
 
 # cache vendor dirs
 cache:
@@ -22,12 +22,8 @@ cache:
 install:
   - COMPOSER_DISCARD_CHANGES=1 composer install --prefer-source --no-interaction
 
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-
 script:
-  - "phpunit --coverage-text --coverage-clover build/logs/clover.xml"
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
-  
+  - vendor/bin/phpunit
+
+after_script:
+  - vendor/bin/test-reporter
