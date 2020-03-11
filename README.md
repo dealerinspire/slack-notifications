@@ -128,7 +128,7 @@ SLACK_ICON=unicorn_face
 SLACK_CHANNEL=#mythical_beasts
 ```
 
-When you use environmental variables this, a basic use case can become even simpler:
+When you use environmental variables this, a basic use case can become even simpler. Of course, you can always overwrite these settings with the methods shown in the examples above.
 
 ```
 (new SlackNotification)
