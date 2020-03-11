@@ -122,10 +122,10 @@ $slackNotification = (new SlackNotification)
 You may also use environmental variables to default some settings. The environmental variables are contained within your project's .env file.
 
 ```
-SLACK_HOOK_PATH
-SLACK_USERNAME
-SLACK_ICON
-SLACK_CHANNEL
+SLACK_HOOK_PATH=abc\123\xyz
+SLACK_USERNAME=Newt Scamander
+SLACK_ICON=unicorn_face
+SLACK_CHANNEL=#mythical_beasts
 ```
 
 When you use environmental variables this, a basic use case can become even simpler:
