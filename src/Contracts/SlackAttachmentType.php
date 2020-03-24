@@ -1,5 +1,5 @@
 <?php
-namespace Skybluesofa\SlackNotifications\Contracts;
+namespace DealerInspire\SlackNotifications\Contracts;
 
 interface SlackAttachmentType
 {

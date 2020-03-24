@@ -1,10 +1,10 @@
 <?php
-namespace Skybluesofa\SlackNotifications\Tests;
+namespace DealerInspire\SlackNotifications\Tests;
 
-use Skybluesofa\SlackNotifications\SlackAttachment;
-use Skybluesofa\SlackNotifications\SlackAttachment\SlackAttachmentAction;
-use Skybluesofa\SlackNotifications\SlackAttachment\SlackAttachmentField;
-use Skybluesofa\SlackNotifications\SlackNotification;
+use DealerInspire\SlackNotifications\SlackAttachment;
+use DealerInspire\SlackNotifications\SlackAttachment\SlackAttachmentAction;
+use DealerInspire\SlackNotifications\SlackAttachment\SlackAttachmentField;
+use DealerInspire\SlackNotifications\SlackNotification;
 use PHPUnit\Framework\TestCase;
 
 class SlackTest extends TestCase
