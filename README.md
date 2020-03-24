@@ -2,6 +2,22 @@
 
 An easy, fluent implementation of a Slack notification system.
 
+## Adding the Package to Your Project
+
+### Requiring in Composer
+
+```
+composer require dealerinspire/slack-notifications
+```
+
+### Adding to Your Code
+
+At the top of the class file where you wish to use:
+
+```
+use DealerInspire\SlackNotifications\SlackNotification;
+```
+
 ## Basic Implementation
 
 ```
@@ -18,6 +34,15 @@ $slackNotification = (new SlackNotification)
 ```
 
 ## With Simple Attachment
+
+At the top of the class file where you wish to use:
+
+```
+use DealerInspire\SlackNotifications\SlackNotification;
+use DealerInspire\SlackNotifications\SlackAttachment;
+```
+
+In your class code:
 
 ```
 $slackAttachment = (new SlackAttachment)
@@ -41,6 +66,17 @@ $slackNotification = (new SlackNotification)
 ```
 
 ## With More Complex Attachment
+
+At the top of the class file where you wish to use:
+
+```
+use DealerInspire\SlackNotifications\SlackNotification;
+use DealerInspire\SlackNotifications\SlackAttachment;
+use DealerInspire\SlackNotifications\SlackAttachment\SlackAttachmentAction;
+use DealerInspire\SlackNotifications\SlackAttachment\SlackAttachmentField;
+```
+
+In your class code:
 
 ```
 $unicornAttachmentField = (new SlackAttachmentField)
@@ -79,6 +115,14 @@ $slackNotification = (new SlackNotification)
 ```
 
 ## Notification configured with an array
+
+At the top of the class file where you wish to use:
+
+```
+use DealerInspire\SlackNotifications\SlackNotification;
+```
+
+In your class code:
 
 ```
 $slackAttachmentConfiguration = [
@@ -127,6 +171,14 @@ SLACK_CHANNEL=#mythical_beasts
 ```
 
 When you use environmental variables this, a basic use case can become even simpler. Of course, you can always overwrite these settings with the methods shown in the examples above.
+
+At the top of the class file where you wish to use:
+
+```
+use DealerInspire\SlackNotifications\SlackNotification;
+```
+
+In your class code:
 
 ```
 (new SlackNotification)
