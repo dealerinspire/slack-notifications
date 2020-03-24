@@ -1,8 +1,8 @@
 <?php
-namespace Skybluesofa\SlackNotifications\SlackAttachment;
+namespace DealerInspire\SlackNotifications\SlackAttachment;
 
-use Skybluesofa\SlackNotifications\Contracts\SlackObject;
-use Skybluesofa\SlackNotifications\Contracts\SlackAttachmentType;
+use DealerInspire\SlackNotifications\Contracts\SlackObject;
+use DealerInspire\SlackNotifications\Contracts\SlackAttachmentType;
 
 class SlackAttachmentField implements SlackObject, SlackAttachmentType
 {

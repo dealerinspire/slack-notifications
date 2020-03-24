@@ -1,8 +1,8 @@
 <?php
-namespace Skybluesofa\SlackNotifications;
+namespace DealerInspire\SlackNotifications;
 
-use Skybluesofa\SlackNotifications\SlackAttachment;
-use Skybluesofa\SlackNotifications\Contracts\SlackObject;
+use DealerInspire\SlackNotifications\SlackAttachment;
+use DealerInspire\SlackNotifications\Contracts\SlackObject;
 use Exception;
 
 /**
