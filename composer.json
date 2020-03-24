@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "dealerinspire\\SlackNotifications\\": "src/"
+            "DealerInspire\\SlackNotifications\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "dealerinspire\\SlackNotifications\\Tests\\": "tests/"
+            "DealerInspire\\SlackNotifications\\Tests\\": "tests/"
         }
     },   
     "minimum-stability": "stable"
