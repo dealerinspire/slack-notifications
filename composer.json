@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "php": ">=7.2.0",
-        "vlucas/phpdotenv": "^4.1"
+        "php": "^7.2.0 || ^8.0",
+        "vlucas/phpdotenv": ">=4.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0 || ^9.0"
@@ -26,5 +26,8 @@
             "DealerInspire\\SlackNotifications\\Tests\\": "tests/"
         }
     },   
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
 }
