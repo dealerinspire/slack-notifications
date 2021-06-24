@@ -1,5 +1,7 @@
 # Slack Notifications
 
+[![PHP Composer](https://github.com/dealerinspire/slack-notifications/actions/workflows/php.yml/badge.svg)](https://github.com/dealerinspire/slack-notifications/actions/workflows/php.yml)
+
 An easy, fluent implementation of a Slack notification system.
 
 ## Adding the Package to Your Project
